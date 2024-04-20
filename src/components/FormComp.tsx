@@ -220,7 +220,7 @@ export function FormComp() {
           <Drawer>
             <DrawerTrigger
               type="submit"
-              className=" w-full py-2   bg-[#337357] font-bold  text-lg hover:bg-[#337357]/90  hover:outline-1  hover:outline-white hover:outline-dashed rounded-lg "
+              className=" w-full py-2   bg-[#337357] font-bold  text-lg hover:bg-[#337357]/90  hover:outline-1 border-none outline-none  hover:outline-white hover:outline-dashed rounded-lg "
             >
               See Results
             </DrawerTrigger>
