@@ -4,6 +4,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 import viursIcon from "@/assets/virus-icon.png";
+import treatment from "@/assets/treatment.png";
 
 import {
   Form,
@@ -227,21 +228,29 @@ export function FormComp() {
               <DrawerContent className="h-[30rem]  bg-[#FBFADA]">
                 <DrawerHeader className=" text-center space-y-8 mx-auto max-w-[700px] p-4 ">
                   <div className=" space-y-4">
-                    <DrawerTitle className=" flex  text-3xl space-x-2 font-bold  ">
+                    <h2 className=" flex items-center  text-3xl space-x-2 font-bold  ">
                       <Image
                         src={viursIcon}
                         alt="virus icon"
                         width={50}
                         height={50}
                       />
-                      {response.title}
-                    </DrawerTitle>
+                      <span>{response.title}</span>
+                    </h2>
                     <DrawerDescription>
                       {response.description}
                     </DrawerDescription>
                   </div>
                   <div className=" space-y-4">
-                    <h2 className=" font-bold text-xl">Treatment</h2>
+                    <h2 className="flex items-center space-x-2 font-bold text-xl">
+                      <Image
+                        src={treatment}
+                        alt="treatment icon"
+                        width={50}
+                        height={50}
+                      />
+                      <span>Treatment</span>
+                    </h2>
                     <DrawerDescription>{response.treatment}</DrawerDescription>
                   </div>
                 </DrawerHeader>
